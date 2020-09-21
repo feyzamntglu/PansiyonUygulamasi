@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pansiyon.SuitController">
+   <bottom>
+      <TableView fx:id="suitListe" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="gunlukfiyatC" prefWidth="75.0" text="Günlük Fiyat" />
+            <TableColumn fx:id="pencereC" prefWidth="75.0" text="Pencere" />
+            <TableColumn fx:id="balkonC" prefWidth="75.0" text="Balkon" />
+            <TableColumn fx:id="tvC" prefWidth="75.0" text="Tv " />
+        </columns>
+      </TableView>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="170.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="listeleBtn" layoutX="208.0" layoutY="69.0" mnemonicParsing="false" onAction="#Listele" prefHeight="39.0" prefWidth="134.0" text="Listele">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="721.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pansiyon.MusteriController">
+   <children>
+      <Label fx:id="Soyad1" layoutX="71.0" layoutY="131.0" prefHeight="21.0" prefWidth="75.0" text="Soyad:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="TcNo1" layoutX="78.0" layoutY="191.0" prefHeight="21.0" prefWidth="75.0" text="Tc No:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="TelNo1" layoutX="71.0" layoutY="253.0" prefHeight="21.0" prefWidth="75.0" text="Tel No:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Cinsiyet1" layoutX="48.0" layoutY="308.0" prefHeight="31.0" prefWidth="96.0" text="Cinsiyet:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button id="kaydetbtn" fx:id="kaydetbtn1" layoutX="40.0" layoutY="372.0" mnemonicParsing="false" onAction="#Kaydet" prefHeight="26.0" prefWidth="112.0" text="Kaydet">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TextFieldAd1" layoutX="167.0" layoutY="73.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="TextFieldSoyad1" layoutX="169.0" layoutY="131.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="TextFieldTcNo1" layoutX="169.0" layoutY="191.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="TextFieldTelNo1" layoutX="169.0" layoutY="253.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="TextFieldCinsiyet1" layoutX="169.0" layoutY="308.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label fx:id="Ad1" layoutX="78.0" layoutY="73.0" prefHeight="21.0" prefWidth="75.0" text="Ad:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="OdaTipi1" layoutX="426.0" layoutY="74.0" prefHeight="30.0" prefWidth="96.0" text="Oda Tipi:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextFieldOdaNo1" layoutX="556.0" layoutY="131.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label fx:id="OdaNo1" layoutX="430.0" layoutY="132.0" prefHeight="30.0" prefWidth="89.0" text="Oda No:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Ucret1" layoutX="429.0" layoutY="302.0" prefHeight="21.0" prefWidth="75.0" text="Ücret:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="GirisTarihi1" layoutX="420.0" layoutY="191.0" prefHeight="30.0" prefWidth="109.0" text="Gün Sayisi:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextFieldUcret1" layoutX="556.0" layoutY="302.0" prefHeight="31.0" prefWidth="200.0" />
+      <Button id="kaydetbtn" fx:id="hesaplaBtn" layoutX="679.0" layoutY="342.0" mnemonicParsing="false" onAction="#Hesapla" prefHeight="26.0" prefWidth="112.0" text="Hesapla">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="MusteriListe" layoutX="29.0" layoutY="427.0" prefHeight="237.0" prefWidth="762.0">
+         <columns>
+            <TableColumn fx:id="adC" prefWidth="75.0" text="Ad" />
+            <TableColumn fx:id="soyadC" prefWidth="75.0" text="Soyad" />
+            <TableColumn fx:id="tcC" prefWidth="75.0" text="Tc No" />
+            <TableColumn fx:id="telnoC" prefWidth="75.0" text="Tel No" />
+            <TableColumn fx:id="cinsiyetC" prefWidth="75.0" text="Cinsiyet" />
+            <TableColumn fx:id="odatipiC" prefWidth="75.0" text="Oda Tipi" />
+            <TableColumn fx:id="odanoC" prefWidth="75.0" text="Oda No" />
+            <TableColumn fx:id="gunSayisiC" text="Gün Sayisi" />
+            <TableColumn fx:id="ucretC" prefWidth="68.0" text="Ücret" />
+         </columns>
+      </TableView>
+      <Button fx:id="Listelebtn" layoutX="194.0" layoutY="369.0" mnemonicParsing="false" onAction="#MListele" prefHeight="42.0" prefWidth="111.0" text="Listele" />
+      <TextField fx:id="TextFieldGunSayisi" layoutX="556.0" layoutY="191.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="TextFieldOdaTipi" layoutX="556.0" layoutY="73.0" prefHeight="31.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

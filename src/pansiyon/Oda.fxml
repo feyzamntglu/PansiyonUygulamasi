@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="583.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pansiyon.OdaController">
+   <children>
+      <Label fx:id="OdaTipi" layoutX="229.0" layoutY="64.0" prefHeight="35.0" prefWidth="191.0" text="Oda Tipi Seçiniz">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="228.0" layoutY="141.0" mnemonicParsing="false" onAction="#SuitBasla" prefHeight="79.0" prefWidth="182.0" text="Suit Oda">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="229.0" layoutY="252.0" mnemonicParsing="false" onAction="#KogusBasla" prefHeight="79.0" prefWidth="182.0" text="Koğuş Oda">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="229.0" layoutY="373.0" mnemonicParsing="false" onAction="#KralBasla" prefHeight="79.0" prefWidth="182.0" text="Kral Dairesi">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pansiyon.KogusController">
+   <bottom>
+      <TableView fx:id="kogusListe" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="gunlukFiyatC" prefWidth="75.0" text="Günlük Fiyat" />
+            <TableColumn fx:id="yatakSayisiC" prefWidth="75.0" text="Yatak Sayisi" />
+            <TableColumn fx:id="camasirmakineC" prefWidth="108.79998779296875" text="Çamaşır Makinesi" />
+            <TableColumn fx:id="radyoC" prefWidth="64.0" text="Radyo" />
+            <TableColumn fx:id="buzdolabiC" prefWidth="69.5999755859375" text="Buzdolabı" />
+        </columns>
+      </TableView>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="listeleBtn" layoutX="245.0" layoutY="100.0" mnemonicParsing="false" onAction="#Listele" prefHeight="26.0" prefWidth="110.0" text="Listele" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
